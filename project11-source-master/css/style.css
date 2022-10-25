@@ -7,7 +7,7 @@
 /* Потом селекторы по тегам */
 
 html {
-
+    font-family: Arial
 }
 
 main {
@@ -15,8 +15,15 @@ main {
     margin: 0px auto;
 }
 
-p {
+h2 {
+    font-size: 32px;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
 
+
+p {
+line-height: 24px;
 }
 
 a {
@@ -26,10 +33,11 @@ a {
 /* Колонки */
 
 .row {
-
+    display: flex;
 }
 .col {
-
+    flex: auto;
+    margin-bottom: 24px;
 }
 
 
@@ -41,60 +49,102 @@ a {
 
 .button {
 
+    padding: 12px; 24px;
+
+    border-radius: 4px;
+    border: none;
+
+    background-color: #554AF8;
+    color: #fff;
 }
 
 /* Потом специальные правила по страничкам */
 
 /* Login*/
 
-.input-login {
+.input-login , .text-input {
 
-
+    width: 100%;
+    padding: 12px; 8px;
+    margin-bottom:16px;
+    border-color: #aaa;
+    border-style: solid;
+    border-radius: 4px;
 }
 
 
 /* Страничка жанров и тегов */
 
-.genre-first {
+.genre-first , .genre-second , .genre-third , .genre-fourth{
+    margin: 16px; 8px;
+    padding: 8px; 16px;
 
+    border:none;
+    border-radius: 4px;
+}
+
+.genre-first{
+    background-color: #E1F5EA;
 }
 
 .genre-second {
-
+    background-color: #CBEDFF;
+    width: 75%
 }
 
 .genre-third {
-
+    background-color: #FEF8E3;
+    width: 50%
 }
 
 .genre-fourth {
-
+    background-color: #EBDCF9;
+    width: 33%
 }
 
 .tag {
-
+    color: #554AF8;
 }
 
 /* Страничка популярного */
 
 .cover {
-
+    width: 85%;
 }
 
 /* Страничка подписки  */
 
-.box-green {
+.box-green, .box-purple{
+    margin: 32px; 0px;
+    padding: 24px; 16px;
 
+    border:none;
+    border-radius: 4px;
+}
+
+.box-green {
+    background-color: #E1F5EA;
 }
 
 .box-purple {
-
+    background-color: #CBEDFF;
 }
 
 .text-large {
-
+    font-size: 20px;
+    font-weigth: bold;
+    margin-bottom: 8px;
 }
 
 .button-link {
+    padding: 12px; 24px;
 
+    border-radius: 4px;
+    border: none;
+
+    background-color: #554AF8;
+    color: #fff;
+
+    text-decoration: none;
+    margin-right: 16px;
 }
